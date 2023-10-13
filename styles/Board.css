@@ -1,0 +1,58 @@
+/* Estilos para el tablero del juego */
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px); /* Ajusta el número de columnas según tus necesidades */
+  grid-template-rows: repeat(8, 50px); /* Ajusta el número de filas según tus necesidades */
+  gap: 1px; /* Espacio entre las celdas */
+  border: 2px solid #333; /* Borde alrededor del tablero */
+  background-color: #ccc; /* Color de fondo del tablero */
+  width: 416px; /* Ancho total del tablero (8 celdas x 50px/celda + 2px de borde) */
+  height: 416px; /* Alto total del tablero (8 celdas x 50px/celda + 2px de borde) */
+  margin: 0 auto; /* Centra el tablero en el medio de la pantalla */
+}
+
+/* Estilos para las celdas del tablero */
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #333; /* Borde de cada celda */
+  background-color: #ddd; /* Color de fondo de las celdas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* Tamaño de fuente del contenido de las celdas */
+  cursor: pointer; /* Cambia el cursor al interactuar con las celdas */
+}
+
+/* Estilos para las filas del tablero */
+.row {
+  display: flex;
+}
+
+
+/* Estilos para celdas abiertas */
+.cell.open {
+  background-color: #fff; /* Cambia el color de fondo de las celdas abiertas */
+}
+
+.my-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
